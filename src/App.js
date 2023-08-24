@@ -22,7 +22,7 @@ function App() {
   }
   const toggleHackerMode = ()=>{
     if(mode === 'light'){
-      showAlert('Hacker mode available in dark mode only', 'warning');
+      showAlert('Hacker mode is available in dark mode', 'warning');
     }
     else{
       if(hackermode === 'white'){
