@@ -1,10 +1,10 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-// import About from './components/About';
+import About from './components/About';
 import { useState } from 'react';
 import Alerts from './components/Alerts';
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
   const [mode, setmode] = useState('light');
@@ -27,11 +27,11 @@ function App() {
     else{
       if(hackermode === 'white'){
         setHackerMode('lime');
-        showAlert('Hacker Mode enabled', 'warning');
+        showAlert('Hacker Mode enabled', 'success');
       }
       else{
         setHackerMode('white');
-        showAlert('Hacker Mode disabled', 'warning');
+        showAlert('Hacker Mode disabled', 'success');
       }
     }
   }
@@ -46,16 +46,16 @@ function App() {
   } 
   return (
     <>
-    <Navbar title = "Text-Utils" mode = {mode} toggleMode = {toggleMode} hackermode = {hackermode} toggleHackerMode = {toggleHackerMode} showAlert = {showAlert}/>
-    <Alerts Alert = {Alert}/>
-    <div className="container my-5">
-    {/* <BrowserRouter>
-        <Routes> */}
-          {/* <Route exact path="/about" element = {<About />}></Route> */}
-        {/* </Routes>
-    </BrowserRouter> */}
-    <TextForm heading = "Analyze the text !" mode = {mode} showAlert = {showAlert} hackermode = {hackermode} />
-    </div>
+    <BrowserRouter>
+      <Navbar title = "Text-Utils" mode = {mode} toggleMode = {toggleMode} hackermode = {hackermode} toggleHackerMode = {toggleHackerMode} showAlert = {showAlert}/>
+      <Alerts Alert = {Alert}/>
+      <div className="container my-5">
+        <Routes>
+          <Route path="/about" element = {<About mode = {mode}/>}></Route>
+          <Route path="/" element = {<TextForm heading = "Analyze the text !" mode = {mode} showAlert = {showAlert} hackermode = {hackermode} />}></Route>
+        </Routes>
+      </div>
+    </BrowserRouter>
     </>
   );
 }
