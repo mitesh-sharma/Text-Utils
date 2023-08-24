@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mitesh-sharma/Text-Utils/static/css/main.abd64e84.css",
-    "main.js": "/mitesh-sharma/Text-Utils/static/js/main.cd3a6a6d.js",
-    "static/js/787.30f7ed28.chunk.js": "/mitesh-sharma/Text-Utils/static/js/787.30f7ed28.chunk.js",
-    "index.html": "/mitesh-sharma/Text-Utils/index.html",
-    "main.abd64e84.css.map": "/mitesh-sharma/Text-Utils/static/css/main.abd64e84.css.map",
-    "main.cd3a6a6d.js.map": "/mitesh-sharma/Text-Utils/static/js/main.cd3a6a6d.js.map",
-    "787.30f7ed28.chunk.js.map": "/mitesh-sharma/Text-Utils/static/js/787.30f7ed28.chunk.js.map"
+    "main.css": "/Text-Utils/static/css/main.abd64e84.css",
+    "main.js": "/Text-Utils/static/js/main.5969e597.js",
+    "static/js/787.30f7ed28.chunk.js": "/Text-Utils/static/js/787.30f7ed28.chunk.js",
+    "index.html": "/Text-Utils/index.html",
+    "main.abd64e84.css.map": "/Text-Utils/static/css/main.abd64e84.css.map",
+    "main.5969e597.js.map": "/Text-Utils/static/js/main.5969e597.js.map",
+    "787.30f7ed28.chunk.js.map": "/Text-Utils/static/js/787.30f7ed28.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.abd64e84.css",
-    "static/js/main.cd3a6a6d.js"
+    "static/js/main.5969e597.js"
   ]
 }
